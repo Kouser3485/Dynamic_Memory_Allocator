@@ -35,7 +35,7 @@ BLOCK allocate_memory(BLOCK memorylist,size_t blocksize,int* no_of_blocks)
     if(memorylist==NULL){
         temp->status=1;
         *no_of_blocks=*no_of_blocks+1;
-        printf("%d memory block: %p allocated for %s \tsize: %ld \n",*no_of_blocks,temp,temp->nameblock,temp->size);
+        printf("%d: memory block: %p allocated for %s \tsize: %ld \n",*no_of_blocks,temp,temp->nameblock,temp->size);
         return temp;
     }
     next=memorylist;
